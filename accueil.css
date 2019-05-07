@@ -1,0 +1,217 @@
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+@media screen and (min-width: 1px){
+#menu {
+    width:100%;
+    height: auto;
+    min-height: 50px;
+    background-color: #53af57;
+    display: block;
+    border-bottom: 2px solid #fff;
+}
+
+#logo { 
+    width: 72%;
+    min-width: 225px;
+    max-width: 300px;
+    margin: 15px 0px 5px 10px;
+    float: left;
+}
+/*navigation-----------------------------------------------------*/
+#toggle-label {
+    display: inline;
+    width: 30px;
+    height: 30px;
+    background-image: url('../images/menu-toggle.png');
+    background-position: center;
+    background-size: cover;
+    float: right;
+    margin: 25px 7px 5px 5px;
+}
+#menu input {
+    margin-left: 0px;
+    position: absolute;
+    display: none;
+    
+}
+nav {
+    height: 0;
+    overflow: hidden;
+    width: 100%;
+    margin: auto;
+    font-size: 1.25em;
+    transition-property: all;
+    transition-duration: 500ms;
+    display: inline-block;
+
+}
+nav li {
+    width: 100%;
+    display: block;
+    text-align: center;
+    border-bottom: 2px solid white;
+    margin-top: 10px;
+    padding-bottom: 10px;
+    font-family: 'arial', 'sans-serif';
+    clear: both;
+}
+.active {
+    border-bottom: 2px solid white;
+}
+nav a {
+    width: 100%;
+    margin: auto;
+    text-decoration: none;
+    font-size: 1.25em;
+}
+nav a:link {
+    color: white;
+}
+nav a:visited {
+    color: white;
+}
+nav a:hover {
+    color: #a2def8;
+}
+nav a:hover ~ nav li {
+    background-color: #1c749b;
+    border-bottom: 2px solid white;
+}
+#menu input[type=checkbox]:checked ~ nav {
+    height: 280px;
+    overflow: visible;
+    transition-property: all;
+    transition-duration: 200ms;
+}    
+}
+@media screen and (min-width: 588px){
+#menu input, #menu label {
+    display: none;
+}
+#menu {
+    display: inline-block;
+}
+h1 {
+    display: block;
+    margin: auto;
+    clear: both;
+    width: 25%;
+    min-width: 300px;
+}
+#logo{
+    margin: auto;
+    margin-top: 15px;
+    display: inline;
+}
+ nav { 
+     text-align: center;
+    width: 600px;
+    height:auto;
+    display: inline;
+    margin: auto;
+    }
+nav ul {
+    margin: auto;
+    padding: 20px 20px 0px 10px;
+    clear: both;
+}
+nav li {
+    width: auto;
+    border: none;
+    display: inline-block;
+    margin: 0px 0px 0px 0px;
+    padding: 10px 10px 0px 10px;;
+    text-align: right;
+}
+nav a {
+    font-size: 1em;
+}
+
+}
+@media screen and (min-width: 899px) {
+#menu input, #menu label {
+    display: none;
+}
+#menu {
+    display: inline-block;
+    margin: 0;
+    padding: 0;
+}
+h1 {
+    display: inline-block;
+    float: left;
+    width: 25%;
+    min-width: 300px;
+    clear: none;
+}
+#logo{
+    float: left;
+    margin-left: 50px;
+    margin-top: 15px;
+    display: inline;
+}
+ nav { 
+    width: 600px;
+    height:auto;
+    display: inline;
+    float: right;
+    }
+nav ul {
+    float: right;
+    padding: 20px 10px 10px 10px;
+    clear: none;
+}
+nav li {
+    border: none;
+    display: inline-block;
+    margin: 0px 10px 0px 10px;
+    padding: 10px 0px 0px 0px;
+    text-align: right;
+}
+nav a {
+    font-size: 1em;
+    text-align: center;
+}
+}

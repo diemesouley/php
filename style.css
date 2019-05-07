@@ -1,0 +1,249 @@
+body{
+    background: #67BE4B;
+}
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+@media screen and (min-width: 1px){
+    #menu {
+        width:100%;
+        height: auto;
+        min-height: 50px;
+        display: block;
+        border-bottom: 2px solid #fff;
+    }
+    /*navigation-----------------------------------------------------*/
+#toggle-label {
+    display: inline;
+    width: 30px;
+    height: 30px;
+    background-position: center;
+    background-size: cover;
+    float: right;
+    margin: 25px 7px 5px 5px;
+}
+#menu input {
+    margin-left: 0px;
+    position: absolute;
+    display: none;
+    
+}
+nav {
+    height: 0;
+    overflow: hidden;
+    width: 100%;
+    margin: auto;
+    font-size: 1.25em;
+    transition-property: all;
+    transition-duration: 500ms;
+    display: inline-block;
+
+}
+nav li {
+    width: 100%;
+    display: block;
+    text-align: center;
+    border-bottom: 2px solid white;
+    margin-top: 10px;
+    padding-bottom: 10px;
+    font-family: 'arial', 'sans-serif';
+    clear: both;
+}
+.active {
+    border-bottom: 2px solid white;
+}
+nav a {
+    width: 100%;
+    margin: auto;
+    text-decoration: none;
+    font-size: 1.25em;
+}
+nav a:link {
+    color: white;
+}
+nav a:visited {
+    color: white;
+}
+nav a:hover {
+    color: #a2def8;
+}
+nav a:hover ~ nav li {
+    background-color: #1c749b;
+    border-bottom: 2px solid white;
+}
+#menu input[type=checkbox]:checked ~ nav {
+    height: 280px;
+    overflow: visible;
+    transition-property: all;
+    transition-duration: 200ms;
+}    
+}
+@media screen and (min-width: 588px){
+#menu input, #menu label {
+    display: none;
+}
+#menu {
+    display: inline-block;
+}
+h1 {
+    display: block;
+    margin: auto;
+    clear: both;
+    width: 25%;
+    min-width: 300px;
+}
+#logo{
+    margin: auto;
+    margin-top: 15px;
+    display: inline;
+}
+ nav { 
+     text-align: center;
+    width: 600px;
+    height:auto;
+    display: inline;
+    margin: auto;
+    }
+nav ul {
+    margin: auto;
+    padding: 20px 20px 0px 10px;
+    clear: both;
+}
+nav li {
+    width: auto;
+    border: none;
+    display: inline-block;
+    margin: 0px 0px 0px 0px;
+    padding: 10px 10px 0px 10px;;
+    text-align: right;
+}
+nav a {
+    font-size: 1em;
+}
+
+}
+@media screen and (min-width: 899px) {
+#menu input, #menu label {
+    display: none;
+}
+#menu {
+    display: inline-block;
+    margin: 0;
+    padding: 0;
+}
+h1 {
+    display: inline-block;
+    float: left;
+    width: 25%;
+    min-width: 300px;
+    clear: none;
+}
+#logo{
+    float: left;
+    margin-left: 50px;
+    margin-top: 15px;
+    display: inline;
+}
+ nav { 
+    width: 600px;
+    height:auto;
+    display: inline;
+    float: right;
+    }
+nav ul {
+    float: right;
+    padding: 20px 10px 10px 10px;
+    clear: none;
+}
+nav li {
+    border: none;
+    display: inline-block;
+    margin: 0px 10px 0px 10px;
+    padding: 10px 0px 0px 0px;
+    text-align: right;
+}
+nav a {
+    font-size: 1em;
+    text-align: center;
+}
+}
+#container{
+    width:400px;
+    margin:0 auto;
+    margin-top:10%;
+}
+/* Bordered form */
+form {
+    width:100%;
+    padding: 30px;
+    border: 1px solid #f1f1f1;
+    background: #fff;
+    box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2), 0 5px 5px 0 rgba(0, 0, 0, 0.24);
+}
+#container h1{
+    width: 38%;
+    margin: 0 auto;
+    padding-bottom: 10px;
+}
+.rouge{
+    background-color: red;
+}
+
+/* Full-width inputs */
+input[type=text], input[type=password] {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+}
+
+/* Set a style for all buttons */
+input[type=submit] {
+    background-color: #53af57;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+}
+input[type=submit]:hover {
+    background-color: white;
+    color: #53af57;
+    border: 1px solid #53af57;
+}
+body{
+    background-color:#67BE4B;
+}
+.rouge{
+    background-color: red;
+}
+table{
+    background-color: white;
+    margin: auto;
+    margin-top: 1%;
+}
+table,th,td{
+    width: 50%;
+    padding: 0%;
+}
+p{
+    margin-top: 8%;
+    text-align: center;
+    text-decoration: white;
+    font-weight: bold;
+}
